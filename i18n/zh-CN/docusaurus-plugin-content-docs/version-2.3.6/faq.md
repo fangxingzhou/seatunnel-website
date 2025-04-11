@@ -352,3 +352,5 @@ SeaTunnel 拥有完全抽象、结构化的代码实现，很多人都选择 Sea
 ## 当我导入项目时，编译器出现异常“找不到类`org.apache.seatunnel.shade.com.typesafe.config.Config`”
 
 首先运行“mvn install”。 在 `seatunnel-config/seatunnel-config-base` 子项目中，包 `com.typesafe.config` 已重新定位到 `org.apache.seatunnel.shade.com.typesafe.config` 并安装到 maven 本地存储库 在子项目 `seatunnel-config/seatunnel-config-shade` 中。
+
+## 使用seatunnel的自动建表功能从oracle2mysql同步数据,但是发现自动建表后的 数据类型和源表的数据类型不一致，源表是string，自动建表的类型是text
